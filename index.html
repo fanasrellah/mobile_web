@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3a0b448ee5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <img class="img1" src="i/higlasservices22-removebg-preview.png" alt="">
+            <img class="img2" src="/i/menu.png" alt="">
+        </header>
+        <div class="Show">
+            <div class="box">
+            <h1>Welcome <br>  <span> in hight class services</span> </h1>
+            <div class="glow"></div>
+            <div class="glow"></div>
+            <img src="/i/[GetPaidStock.com]-62140a280ff7b.jpg" alt="">
+            </div>
+        </div>
+        <div class="box-1">
+            <h1>About us</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="box-2">
+            <div class="plan-1 one">
+                <div class="cadre1">
+                    <h1>Plan Start up</h1>
+                    <p>1 month</p>
+                </div>
+                <div class="cadre2">
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                </div>
+                <div class="cadre3">
+                    <a id="btn" href="#"><div id="smart-button-container">
+                        <div style="text-align: center;">
+                          <div id="paypal-button-container"></div>
+                        </div>
+                      </div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                      function initPayPalButton() {
+                        paypal.Buttons({
+                          style: {
+                            shape: 'rect',
+                            color: 'gold',
+                            layout: 'vertical',
+                            label: 'buynow',
+                            
+                          },
+                  
+                          createOrder: function(data, actions) {
+                            return actions.order.create({
+                              purchase_units: [{"amount":{"currency_code":"USD","value":200}}]
+                            });
+                          },
+                  
+                          onApprove: function(data, actions) {
+                            return actions.order.capture().then(function(orderData) {
+                              
+                              // Full available details
+                              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                  
+                              // Show a success message within this page, e.g.
+                              const element = document.getElementById('paypal-button-container');
+                              element.innerHTML = '';
+                              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                  
+                              // Or go to another URL:  actions.redirect('thank_you.html');
+                              
+                            });
+                          },
+                  
+                          onError: function(err) {
+                            console.log(err);
+                          }
+                        }).render('#paypal-button-container');
+                      }
+                      initPayPalButton();
+                    </script></a>
+                </div>
+            </div>
+            <div class="plan-1 two">
+                <div class="cadre0">
+                    <h1>Rcommended</h1>
+                </div>
+                <div class="cadre1">
+                    <h1>Plan 
+                        Hight class Businss</h1>
+                    <p>12 month</p>
+                </div>
+                <div class="cadre2">
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                </div>
+                <div class="cadre3">
+                    <a id="btn" href="#">1900dh</a>
+                </div>
+            </div>
+            <div class="plan-1 three">
+                <div class="cadre1">
+                    <h1>Plan  </h1>
+                    <span>Vip</span>
+                    <p>12 month</p>
+                </div>
+                <div class="cadre2">
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                    <p>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                        #text1
+                    </p>
+                </div>
+                <div class="cadre3">
+                    <a href="#">2900 dh</a>
+                </div>
+            </div> 
+        </div>
+        <div class="box-3">
+            <h3>Contact us</h3>
+            <div class="cont0">
+
+            <input type="text" placeholder="Nom">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Email">
+            <input class="text" type="message" placeholder="TEXT">
+            <a href="#">SEND</a>
+        </div>
+
+
+        
+        </div>
+        <footer class="box-4"><p>Copyright  
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2022
+        </p></footer>
+
+    </section>
+</body>
+</html>
